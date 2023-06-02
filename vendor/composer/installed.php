@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => NULL,
+        'name' => 'elzobrito/olivia-app',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'elzobrito/olivia-app' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => NULL,
+            'dev_requirement' => false,
+        ),
+        'elzobrito/olivia-router' => array(
+            'pretty_version' => '2.1',
+            'version' => '2.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../elzobrito/olivia-router',
+            'aliases' => array(),
+            'reference' => '1d5770e5ca144030dc8e8e68406deb56ae74fd82',
+            'dev_requirement' => false,
+        ),
+        'elzobrito/olivia-uuid' => array(
+            'pretty_version' => 'v1.1',
+            'version' => '1.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../elzobrito/olivia-uuid',
+            'aliases' => array(),
+            'reference' => '700c9aec84fedc14a3c109f3664a7770d208b5da',
+            'dev_requirement' => false,
+        ),
+    ),
+);

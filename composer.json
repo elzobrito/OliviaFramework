@@ -1,0 +1,22 @@
+{
+    "name": "elzobrito/olivia-app",
+    "description": "FrameWork Olivia",
+    "authors": [
+        {
+            "name": "elzobrito",
+            "email": "elzo.filho@etec.sp.gov.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OliviaFrameApp\\": "app/",
+            "OliviaFrameLib\\": "lib/",
+            "OliviaFramePublico\\": "publico/"
+        }
+    },
+    "require": {
+        "php": "^7.2.5|^8.0",        
+        "elzobrito/olivia-router": "^2.1",
+        "elzobrito/olivia-uuid": "^1.1"
+    }
+}

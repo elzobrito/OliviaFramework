@@ -1,0 +1,98 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4a79b3910b0ae5db6cdd240132f35918",
+    "packages": [
+        {
+            "name": "elzobrito/olivia-router",
+            "version": "2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaRoute.git",
+                "reference": "1d5770e5ca144030dc8e8e68406deb56ae74fd82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaRoute/zipball/1d5770e5ca144030dc8e8e68406deb56ae74fd82",
+                "reference": "1d5770e5ca144030dc8e8e68406deb56ae74fd82",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OliviaRouter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elzo Brito dos Santos Filho",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "Router php",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaRoute/issues",
+                "source": "https://github.com/elzobrito/OliviaRoute/tree/2.1"
+            },
+            "time": "2023-06-02T19:16:43+00:00"
+        },
+        {
+            "name": "elzobrito/olivia-uuid",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaUuid.git",
+                "reference": "700c9aec84fedc14a3c109f3664a7770d208b5da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaUuid/zipball/700c9aec84fedc14a3c109f3664a7770d208b5da",
+                "reference": "700c9aec84fedc14a3c109f3664a7770d208b5da",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OliviaUuid\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "elzobrito",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "FrameWork Olivia",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaUuid/issues",
+                "source": "https://github.com/elzobrito/OliviaUuid/tree/v1.1"
+            },
+            "time": "2023-05-27T12:33:33+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.2.5|^8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
