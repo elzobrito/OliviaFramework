@@ -6,33 +6,24 @@ class Router
 {
     private $route;
     private $clauses;
+    private $trie;
 
     public function __construct()
     {
         $this->route = [];
         $this->clauses = [];
+        $this->trie = new Trie();
     }
 
-    public function get($pattern, $controller_method)
+    public function addRoute($httpMethod, $pattern, $handler,$middleware)
     {
-        $this->route('get', $pattern, $controller_method, isset($this->clauses['middleware']) ? $this->clauses['middleware'] : null);
-    }
-
-    public function post($pattern, $controller_method)
-    {
-        if ($this->isCsrfEnabled()) {
-            if ($this->requestPost('_token') === $_SESSION['UUID']) {
-                $this->route('post', $pattern, $controller_method, isset($this->clauses['middleware']) ? $this->clauses['middleware'] : null);
-            }
-        } else {
-            $this->route('post', $pattern, $controller_method, isset($this->clauses['middleware']) ? $this->clauses['middleware'] : null);
-        }
+        $segments = explode('/', trim($pattern, '/'));
+        $this->trie->insert($segments, ['http_method' => $httpMethod, 'handler' => $handler,'middleware'=>$middleware]);
     }
 
     public function route($http_method, $pattern, $controller_method, $middleware)
     {
         $pattern = $this->routeToRegex('/' . $_SESSION['BASENAME'] . $pattern);
-
         $handler = [
             'http_method' => $http_method,
             'url_pattern' => $pattern,
@@ -43,15 +34,15 @@ class Router
         $this->route[] = $handler;
     }
 
-    public function execute($request_data)
+    public function execute()
     {
+        $seg = null;
         $routerDispatcher = new RouterDispatcher($this->route, $this->clauses);
-        $routerDispatcher->dispatch($request_data);
-    }
-
-    private function isCsrfEnabled()
-    {
-        return isset($_SESSION['CSRF']) && $_SESSION['CSRF'] === true;
+        $segments = explode('/', trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/') ?? '/');
+        foreach ($segments as $key => $segment)
+            if ($segment)
+                $seg = $this->trie->searchPrefix([$segment]);
+        $routerDispatcher->dispatch($seg);
     }
 
     public function __call($name, $arguments)
@@ -64,11 +55,15 @@ class Router
         return $this;
     }
 
-    private function routeToRegex($pattern)
+    function routeToRegex($url)
     {
-        $pattern = preg_replace('/\//', '\\/', $pattern);
-        $pattern = preg_replace('/\{([a-z]+)\}/', '(?P<\1>[a-zA-Z0-9-]+)', $pattern);
-        $pattern = '/^' . $pattern . '$/';
-        return $pattern;
+        // Escapa os caracteres especiais da url
+        $url = preg_quote($url, '/');
+        // Substitui os parâmetros entre chaves por grupos nomeados opcionais
+        $url = preg_replace('/\{([a-z]+)\}/', '(?P<\1>[^\/]+)?', $url);
+        // Adiciona o início e o fim da expressão regular
+        $url = '/^' . $url . '$/';
+        // Retorna a expressão regular
+        return $url;
     }
 }

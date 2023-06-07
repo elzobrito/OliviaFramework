@@ -14,25 +14,17 @@ class RouterDispatcher
         $this->clauses = $clauses;
     }
 
-    public function dispatch($request_data)
+    public function dispatch($actions)
     {
-
         $_SESSION['e404'] = true;
-        foreach ($this->route as $actions) {
-            if ($request_data['REQUEST_METHOD'] === strtoupper($actions['http_method'])) {
-                if (preg_match($actions['url_pattern'], $request_data['REQUEST_URI'], $params) === 1) {
-                    $handler = $actions['handler'];
-
-                    if ($actions['middleware'] != null) {
-                        $middlewares = is_array($actions['middleware']) ? $actions['middleware'] : [$actions['middleware']];
-                        $this->executeMiddlewares($middlewares);
-                    }
-
-                    $this->executeHandler($handler, $params, $request_data);
-                    $_SESSION['e404'] = false;
-                    break;
-                }
+        if ($_SERVER['REQUEST_METHOD'] === strtoupper($actions['route']['http_method'])) {
+            if (isset($actions['route']['middleware']) != null) {
+                $middlewares = is_array($actions['route']['middleware']) ? $actions['route']['middleware'] : [$actions['route']['middleware']];
+                $this->executeMiddlewares($middlewares);
             }
+
+            $this->executeHandler($actions['route']['handler']);
+            $_SESSION['e404'] = false;
         }
     }
 
@@ -45,14 +37,10 @@ class RouterDispatcher
         }
     }
 
-    private function executeHandler($handler, $params, $request_data)
+    private function executeHandler($handler, $params = null, $request_data = null)
     {
         $callHandler = $this->callHandlerClass($handler);
         $handlerInstance = ControllerFactory::createController($callHandler['controller']);
-        $format = array_key_exists('CONTENT_TYPE', $request_data) ? $request_data['CONTENT_TYPE'] : 'text/html';
-        $params['format'] = explode('/', $format)[1];
-        $params['method'] = $request_data['REQUEST_METHOD'];
-
         $handlerInstance->{$callHandler['action']}($params);
     }
 

@@ -26,6 +26,6 @@ class Index extends ViewModel
 
     public function content()
     {
-        echo '<main class="px-3"><h1>Olívia Framework</h1><p class="lead">É uma estrutura de aplicação web com sintaxe expressiva e elegante.</p></main>';
+        echo '<main class="px-3"><h1>Olívia Framework</h1><p class="lead">É uma estrutura de aplicação web com sintaxe expressiva e elegante.</p><a href="./abrir?id=5">Abrir</a></main>';
     }
 }
