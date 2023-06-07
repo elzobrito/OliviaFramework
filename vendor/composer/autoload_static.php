@@ -14,6 +14,12 @@ class ComposerStaticInit719639281e50c19a08d9577660eeff03
             'OliviaFramePublico\\' => 19,
             'OliviaFrameLib\\' => 15,
             'OliviaFrameApp\\' => 15,
+            'OliviaDatabasePublico\\' => 22,
+            'OliviaDatabaseModel\\' => 20,
+            'OliviaDatabaseLibrary\\' => 22,
+            'OliviaDatabaseConfig\\' => 21,
+            'OliviaCryptography\\' => 19,
+            'OliviaCache\\' => 12,
         ),
         'H' => 
         array (
@@ -41,6 +47,30 @@ class ComposerStaticInit719639281e50c19a08d9577660eeff03
         'OliviaFrameApp\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'OliviaDatabasePublico\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-databaselibrary/public_html',
+        ),
+        'OliviaDatabaseModel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-databaselibrary/model',
+        ),
+        'OliviaDatabaseLibrary\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-databaselibrary/src',
+        ),
+        'OliviaDatabaseConfig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-databaselibrary/config',
+        ),
+        'OliviaCryptography\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-cryptography/src',
+        ),
+        'OliviaCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-cache/src',
         ),
         'HttpServiceSrc\\' => 
         array (

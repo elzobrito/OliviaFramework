@@ -11,5 +11,11 @@ return array(
     'OliviaFramePublico\\' => array($baseDir . '/publico'),
     'OliviaFrameLib\\' => array($baseDir . '/lib'),
     'OliviaFrameApp\\' => array($baseDir . '/app'),
+    'OliviaDatabasePublico\\' => array($vendorDir . '/elzobrito/olivia-databaselibrary/public_html'),
+    'OliviaDatabaseModel\\' => array($vendorDir . '/elzobrito/olivia-databaselibrary/model'),
+    'OliviaDatabaseLibrary\\' => array($vendorDir . '/elzobrito/olivia-databaselibrary/src'),
+    'OliviaDatabaseConfig\\' => array($vendorDir . '/elzobrito/olivia-databaselibrary/config'),
+    'OliviaCryptography\\' => array($vendorDir . '/elzobrito/olivia-cryptography/src'),
+    'OliviaCache\\' => array($vendorDir . '/elzobrito/olivia-cache/src'),
     'HttpServiceSrc\\' => array($vendorDir . '/elzobrito/olivia-httpservice/src'),
 );

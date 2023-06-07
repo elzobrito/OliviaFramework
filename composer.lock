@@ -4,8 +4,125 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d9dad900935533994788c8f8eb5c15e",
+    "content-hash": "79c83a487113a33e99fdfda115dad1f9",
     "packages": [
+        {
+            "name": "elzobrito/olivia-cache",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaCache.git",
+                "reference": "ed6830c335468665495887ab5e42f13e2411ae41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaCache/zipball/ed6830c335468665495887ab5e42f13e2411ae41",
+                "reference": "ed6830c335468665495887ab5e42f13e2411ae41",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OliviaCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "elzobrito",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "Cache Olivia",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaCache/issues",
+                "source": "https://github.com/elzobrito/OliviaCache/tree/1.0"
+            },
+            "time": "2023-06-07T18:19:50+00:00"
+        },
+        {
+            "name": "elzobrito/olivia-cryptography",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaCryptography.git",
+                "reference": "5f9f2a7fb2a15fd33ad8e392d5c424b9ff11287f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaCryptography/zipball/5f9f2a7fb2a15fd33ad8e392d5c424b9ff11287f",
+                "reference": "5f9f2a7fb2a15fd33ad8e392d5c424b9ff11287f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OliviaCryptography\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "elzobrito",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "Cryptography Olivia",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaCryptography/issues",
+                "source": "https://github.com/elzobrito/OliviaCryptography/tree/1.0"
+            },
+            "time": "2023-06-07T18:02:25+00:00"
+        },
+        {
+            "name": "elzobrito/olivia-databaselibrary",
+            "version": "3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/Oliviadatabaselibrary.git",
+                "reference": "3a6552e94bfe9c0aeb8deff025f32d625456ae64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/Oliviadatabaselibrary/zipball/3a6552e94bfe9c0aeb8deff025f32d625456ae64",
+                "reference": "3a6552e94bfe9c0aeb8deff025f32d625456ae64",
+                "shasum": ""
+            },
+            "require": {
+                "elzobrito/olivia-cache": "^1.0",
+                "php": "^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OliviaDatabaseModel\\": "model",
+                    "OliviaDatabaseConfig\\": "config",
+                    "OliviaDatabaseLibrary\\": "src",
+                    "OliviaDatabasePublico\\": "public_html"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elzo Brito dos Santos Filho",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/elzobrito/Oliviadatabaselibrary/issues",
+                "source": "https://github.com/elzobrito/Oliviadatabaselibrary/tree/3.5"
+            },
+            "time": "2023-06-07T19:14:23+00:00"
+        },
         {
             "name": "elzobrito/olivia-httpservice",
             "version": "1.0",

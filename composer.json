@@ -18,6 +18,9 @@
         "php": "^7.2.5|^8.0",        
         "elzobrito/olivia-router": "^2.1",
         "elzobrito/olivia-uuid": "^1.1",
-        "elzobrito/olivia-httpservice": "^1.0"
+        "elzobrito/olivia-httpservice": "^1.0",
+        "elzobrito/olivia-cryptography": "^1.0",
+        "elzobrito/olivia-databaselibrary": "^3.5",
+        "elzobrito/olivia-cache": "^1.0"
     }
 }
