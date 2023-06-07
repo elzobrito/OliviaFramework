@@ -167,6 +167,46 @@
             "install-path": "../elzobrito/olivia-httpservice"
         },
         {
+            "name": "elzobrito/olivia-otp-generator",
+            "version": "1.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaOtpGenerator.git",
+                "reference": "cd297ec2942e225582a7653aa28ad29bec590c94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaOtpGenerator/zipball/cd297ec2942e225582a7653aa28ad29bec590c94",
+                "reference": "cd297ec2942e225582a7653aa28ad29bec590c94",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "time": "2023-06-07T23:28:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "OliviaOTP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "elzobrito",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "Generator OTP Olivia",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaOtpGenerator/issues",
+                "source": "https://github.com/elzobrito/OliviaOtpGenerator/tree/1.0"
+            },
+            "install-path": "../elzobrito/olivia-otp-generator"
+        },
+        {
             "name": "elzobrito/olivia-router",
             "version": "2.1",
             "version_normalized": "2.1.0.0",

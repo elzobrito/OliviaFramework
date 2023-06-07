@@ -11,6 +11,7 @@ class ComposerStaticInit719639281e50c19a08d9577660eeff03
         array (
             'OliviaUuid\\' => 11,
             'OliviaRouter\\' => 13,
+            'OliviaOTP\\' => 10,
             'OliviaFramePublico\\' => 19,
             'OliviaFrameLib\\' => 15,
             'OliviaFrameApp\\' => 15,
@@ -35,6 +36,10 @@ class ComposerStaticInit719639281e50c19a08d9577660eeff03
         'OliviaRouter\\' => 
         array (
             0 => __DIR__ . '/..' . '/elzobrito/olivia-router/src',
+        ),
+        'OliviaOTP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-otp-generator/src',
         ),
         'OliviaFramePublico\\' => 
         array (

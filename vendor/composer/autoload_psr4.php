@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'OliviaUuid\\' => array($vendorDir . '/elzobrito/olivia-uuid/src'),
     'OliviaRouter\\' => array($vendorDir . '/elzobrito/olivia-router/src'),
+    'OliviaOTP\\' => array($vendorDir . '/elzobrito/olivia-otp-generator/src'),
     'OliviaFramePublico\\' => array($baseDir . '/publico'),
     'OliviaFrameLib\\' => array($baseDir . '/lib'),
     'OliviaFrameApp\\' => array($baseDir . '/app'),

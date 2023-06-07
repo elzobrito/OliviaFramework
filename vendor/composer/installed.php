@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'f436f7b83759f86f6850240712289a1c905527ca',
+        'reference' => '1f821d762eea6f2a21c8c18418dd3dfe4210de3e',
         'name' => 'elzobrito/olivia-framework',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'f436f7b83759f86f6850240712289a1c905527ca',
+            'reference' => '1f821d762eea6f2a21c8c18418dd3dfe4210de3e',
             'dev_requirement' => false,
         ),
         'elzobrito/olivia-httpservice' => array(
@@ -53,6 +53,15 @@
             'install_path' => __DIR__ . '/../elzobrito/olivia-httpservice',
             'aliases' => array(),
             'reference' => 'c3442423a6c24abc26da6d9ca5dca83f93b7b68d',
+            'dev_requirement' => false,
+        ),
+        'elzobrito/olivia-otp-generator' => array(
+            'pretty_version' => '1.0',
+            'version' => '1.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../elzobrito/olivia-otp-generator',
+            'aliases' => array(),
+            'reference' => 'cd297ec2942e225582a7653aa28ad29bec590c94',
             'dev_requirement' => false,
         ),
         'elzobrito/olivia-router' => array(
