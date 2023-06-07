@@ -15,6 +15,10 @@ class ComposerStaticInit719639281e50c19a08d9577660eeff03
             'OliviaFrameLib\\' => 15,
             'OliviaFrameApp\\' => 15,
         ),
+        'H' => 
+        array (
+            'HttpServiceSrc\\' => 15,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -37,6 +41,10 @@ class ComposerStaticInit719639281e50c19a08d9577660eeff03
         'OliviaFrameApp\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'HttpServiceSrc\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elzobrito/olivia-httpservice/src',
         ),
     );
 

@@ -1,22 +1,31 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
-        'name' => 'elzobrito/olivia-app',
+        'reference' => 'aa7a6aec92fa7c81588d1c389bd63033fb442b60',
+        'name' => 'elzobrito/olivia-framework',
         'dev' => true,
     ),
     'versions' => array(
-        'elzobrito/olivia-app' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+        'elzobrito/olivia-framework' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'aa7a6aec92fa7c81588d1c389bd63033fb442b60',
+            'dev_requirement' => false,
+        ),
+        'elzobrito/olivia-httpservice' => array(
+            'pretty_version' => '1.0',
+            'version' => '1.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../elzobrito/olivia-httpservice',
+            'aliases' => array(),
+            'reference' => 'c3442423a6c24abc26da6d9ca5dca83f93b7b68d',
             'dev_requirement' => false,
         ),
         'elzobrito/olivia-router' => array(

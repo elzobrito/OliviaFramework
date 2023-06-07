@@ -4,8 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a79b3910b0ae5db6cdd240132f35918",
+    "content-hash": "5d9dad900935533994788c8f8eb5c15e",
     "packages": [
+        {
+            "name": "elzobrito/olivia-httpservice",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elzobrito/OliviaHttpService.git",
+                "reference": "c3442423a6c24abc26da6d9ca5dca83f93b7b68d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elzobrito/OliviaHttpService/zipball/c3442423a6c24abc26da6d9ca5dca83f93b7b68d",
+                "reference": "c3442423a6c24abc26da6d9ca5dca83f93b7b68d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HttpServiceSrc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "elzobrito",
+                    "email": "elzo.filho@etec.sp.gov.br"
+                }
+            ],
+            "description": "HttpService Olivia",
+            "support": {
+                "issues": "https://github.com/elzobrito/OliviaHttpService/issues",
+                "source": "https://github.com/elzobrito/OliviaHttpService/tree/1.0"
+            },
+            "time": "2023-05-31T18:15:03+00:00"
+        },
         {
             "name": "elzobrito/olivia-router",
             "version": "2.1",

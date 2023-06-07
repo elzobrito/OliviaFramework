@@ -11,4 +11,5 @@ return array(
     'OliviaFramePublico\\' => array($baseDir . '/publico'),
     'OliviaFrameLib\\' => array($baseDir . '/lib'),
     'OliviaFrameApp\\' => array($baseDir . '/app'),
+    'HttpServiceSrc\\' => array($vendorDir . '/elzobrito/olivia-httpservice/src'),
 );
